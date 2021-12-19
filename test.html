@@ -11,6 +11,46 @@
 
 	<body>
 		
+		<script>
+			function $(obj) {
+				return document.getElementById(obj);
+			}
+			
+			function save() {
+				localStorage.name = $('name').value;
+				localStorage.xuehao = $('xuehao').value;
+				localStorage.zhuanye = $('zhuanye').value;
+				localStorage.time1 = $('time1').value;
+				localStorage.time2 = $('time2').value;
+				localStorage.liyou = $('liyou').value;
+				localStorage.quxiang = $('quxiang').value;
+			}
+			
+			function restore() {
+				if(typeof(localStorage.name) != "undefined") {
+					$('name').value = localStorage.name;
+				}
+				if(typeof(localStorage.xuehao) != "undefined") {
+					$('xuehao').value = localStorage.xuehao;
+				}
+				if(typeof(localStorage.zhuanye) != "undefined") {
+					$('zhuanye').value = localStorage.zhuanye;
+				}
+				if(typeof(localStorage.time1) != "undefined") {
+					$('time1').value = localStorage.time1;
+				}
+				if(typeof(localStorage.time2) != "undefined") {
+					$('time2').value = localStorage.time2;
+				}
+				if(typeof(localStorage.liyou) != "undefined") {
+					$('liyou').value = localStorage.liyou;
+				}
+				if(typeof(localStorage.quxiang) != "undefined") {
+					$('quxiang').value = localStorage.quxiang;
+				}
+			}
+		</script>
+		
 		<div data-v-558d2c74="" class="dx-form_body">
 			<form action="./test1.html" name="infor" method="get">
 	
